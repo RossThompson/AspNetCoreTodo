@@ -15,6 +15,8 @@ namespace AspNetCoreTodo.Data
         {
         }
 
+        public DbSet<TodoItem> Items { get; set; } // represents a table or collection in the database. you're telling Entity Framework Core that you want to store TodoItem entities in a table called Items
+        
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
